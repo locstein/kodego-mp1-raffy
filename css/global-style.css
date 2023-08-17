@@ -4,11 +4,14 @@
 font-family: 'Ubuntu', sans-serif; */
 
 .home-img-logo {
-  height: 100px;
+  height: 6rem;
 }
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+}
+.sidebar-logo {
+  height: 5rem;
 }
 .nav-link {
   position: relative;
@@ -30,4 +33,11 @@ a {
 }
 .nav-link:hover::after {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    background-color: rgba(68, 68, 39, 0.199);
+    backdrop-filter: blur(10px); 
+  }
 }

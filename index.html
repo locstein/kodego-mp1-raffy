@@ -13,7 +13,44 @@
 </head>
 <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+
+    <!-- navbar-logo -->
+    <a class="navbar-brand" href="#"><img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt=""></a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- sidebar -->
+    <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="sidebar-logo" src="./home-images/micatours-logo-white.png" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body py-2">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item text-center py-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
 <div class="container">
   <a class="navbar-brand" href="#">
     <img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt="">
@@ -41,14 +78,14 @@
     </ul>
   </div>
 </div>
-</nav>
+</nav> -->
 <!-- bg-vid -->
 <div class="home-txt-center">
-<div class="video-container">
+<!-- <div class="video-container">
   <video autoplay loop muted>
       <source src="./home-images/home-bg-video.mp4" type="video/mp4" muted="muted">
-  </video>
-<!-- <img class="home_bg_image" src="./home-images/home-bg-img-terraces.jpg" alt="home-bg-image"> -->
+  </video> -->
+<img class="home_bg_image" src="./home-images/home-img-bg (balloons).jpg" alt="home-bg-image">
 <h1>Explore. Dream. Discover.</h1>
 <p class="fs-2">Seize the Moment: Embark on a lifetime Journey!</p>
 <div class="d-grid gap-2 col-2 mx-auto">
