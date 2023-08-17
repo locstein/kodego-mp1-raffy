@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@400;500&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.home-img-logo {
+  height: 100px;
+}
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #adc178;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.nav-link.active::after {
+  opacity: 1;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}

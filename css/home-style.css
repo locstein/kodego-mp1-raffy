@@ -1,0 +1,50 @@
+body {
+  overflow: hidden;
+}
+
+.home_bg_image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home-txt-center h1 {
+  text-align: center;
+  margin-top: 17rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fefae0;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home-txt-center p {
+  text-align: center;
+  color: white;
+}
+.home-btn {
+  background-color: #06d6a0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}

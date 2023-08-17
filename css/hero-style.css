@@ -1,0 +1,19 @@
+.c-item {
+  height: 100vh;
+}
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3)
+}
+.carousel-caption {
+  margin-top: 10rem;
+}
+.carousel-caption p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.carousel-caption h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
