@@ -12,33 +12,41 @@
 <title>Mica&Co | Hero</title>
 </head>
 <body>
-  <!-- navbar -->
+
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+      <!-- navbar-logo -->
+      <a class="navbar-brand" href="#"><img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt=""></a>
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  
+      <!-- sidebar -->
+      <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="sidebar-logo" src="./home-images/micatours-logo-white.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-2">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item text-center py-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item  text-center py-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item  text-center py-2">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item  text-center py-2">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item  text-center py-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -56,7 +64,7 @@
       <div class="carousel-caption top-0">
         <p class="mt-5 fs-3 text-uppercase">The journey of a lifetime starts with one step.</p>
         <h1 class="display-1 text-capitalize">Japan</h1>
-        <button type="button" class="btn btn-primary btn-md px-4 py-2 fs-5 mt-3">Book Now</button>
+        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
       </div>
     </div>
     <div class="carousel-item c-item">
@@ -64,7 +72,7 @@
       <div class="carousel-caption top-0">
         <p class="mt-5 fs-3 text-uppercase">It's not a vacation, it's an adventure!</p>
         <h1 class="display-1 text-capitalize">Machu Picchu</h1>
-        <button type="button" class="btn btn-primary btn-md px-4 py-2 fs-5 mt-3">Book Now</button>
+        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
       </div>
     </div>
     <div class="carousel-item c-item">
@@ -72,7 +80,7 @@
       <div class="carousel-caption top-0">
         <p class="mt-5 fs-3 text-uppercase">Get away from the ordinary</p>
         <h1 class="display-1 text-capitalize">Chichén Itzá</h1>
-        <button type="button" class="btn btn-primary btn-md px-4 py-2 fs-5 mt-3">Book Now</button>
+        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
       </div>
     </div>
   </div>
