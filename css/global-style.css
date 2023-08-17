@@ -13,27 +13,15 @@ a {
 .sidebar-logo {
   height: 5rem;
 }
-.nav-link {
-  position: relative;
+.navbar {
+  transition: all 0.5s;
+  height: 6rem;
 }
-.nav-link::after {
-  content: "";
-  opacity: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #adc178;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.2s;
+.navbar-scroll {
+  background-color: #212529;
+  box-shadow: 0, 3px, 10px rgba(0, 0, 0, 0.199);
 }
-.nav-link.active::after {
-  opacity: 1;
-}
-.nav-link:hover::after {
-  opacity: 1;
-}
+
 
 @media (max-width: 768px) {
   .sidebar {

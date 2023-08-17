@@ -12,104 +12,186 @@
 <title>Mica&Co | Hero</title>
 </head>
 <body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <div class="container">
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <div class="container">
-  
-      <!-- navbar-logo -->
-      <a class="navbar-brand" href="#"><img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt=""></a>
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- sidebar -->
-      <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="sidebar-logo" src="./home-images/micatours-logo-white.png" alt=""></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body py-2">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item text-center py-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item  text-center py-2">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item  text-center py-2">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item  text-center py-2">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item  text-center py-2">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- navbar-logo -->
+    <a class="navbar-brand" href="#"><img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt=""></a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- sidebar -->
+    <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="sidebar-logo" src="./home-images/micatours-logo-white.png" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body py-2">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item text-center py-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <!-- carousel -->
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active c-item">
-      <img src="./home-images/hero-car-img (japan).jpg" class="d-block w-100 c-img" alt="...">
-      <div class="carousel-caption top-0">
-        <p class="mt-5 fs-3 text-uppercase">The journey of a lifetime starts with one step.</p>
-        <h1 class="display-1 text-capitalize">Japan</h1>
-        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
-      </div>
-    </div>
-    <div class="carousel-item c-item">
-      <img src="./home-images/hero-car-img (machu).jpg" class="d-block w-100 c-img" alt="...">
-      <div class="carousel-caption top-0">
-        <p class="mt-5 fs-3 text-uppercase">It's not a vacation, it's an adventure!</p>
-        <h1 class="display-1 text-capitalize">Machu Picchu</h1>
-        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
-      </div>
-    </div>
-    <div class="carousel-item c-item">
-      <img src="./home-images/hero-car-img (mexico).jpg" class="d-block w-100 c-img" alt="...">
-      <div class="carousel-caption top-0">
-        <p class="mt-5 fs-3 text-uppercase">Get away from the ordinary</p>
-        <h1 class="display-1 text-capitalize">Chichén Itzá</h1>
-        <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
-      </div>
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active c-item">
+    <img src="./home-images/hero-car-img (japan).jpg" class="d-block w-100 c-img" alt="...">
+    <div class="carousel-caption top-0">
+      <p class="mt-5 fs-3 text-uppercase">The journey of a lifetime starts with one step.</p>
+      <h1 class="display-1 text-capitalize">Japan</h1>
+      <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="carousel-item c-item">
+    <img src="./home-images/hero-car-img (machu).jpg" class="d-block w-100 c-img" alt="...">
+    <div class="carousel-caption top-0">
+      <p class="mt-5 fs-3 text-uppercase">It's not a vacation, it's an adventure!</p>
+      <h1 class="display-1 text-capitalize">Machu Picchu</h1>
+      <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
+    </div>
+  </div>
+  <div class="carousel-item c-item">
+    <img src="./home-images/hero-car-img (mexico).jpg" class="d-block w-100 c-img" alt="...">
+    <div class="carousel-caption top-0">
+      <p class="mt-5 fs-3 text-uppercase">Get away from the ordinary</p>
+      <h1 class="display-1 text-capitalize">Chichén Itzá</h1>
+      <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
 </div>
 
 <!-- about -->
-<!-- <div class="d-flex align-items-start">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+<!-- <div class="container about-cont">
+  <h1 class="about-us-head mb-5" id="about">Elevate Your Travel Experience</h1>
+  <div class="d-flex align-items-start about-full-content">
+    <div class="nav flex-column nav-pills me-5 mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active abt-btn" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">About Us</button>
+      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mission</button>
+      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Vision</button>
+    </div>
+    <div class="tab-content tab-width" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0"><p class="about-us">About Us</p>
+        <hr>
+      <p class="about-us-p">
+        We established MiCa & Co. TRAVEL AND TOURS to share our passion for adventure, exploration, and fun! Each of our founders renewed their purpose in life while traveling with the people they love. We want to share this magic with local and international tourists through the services only MiCa & Co. TRAVEL AND TOURS can provide.
+      </p>
+        
+      </div>
+      <div class="tab-pane tab-width fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0"><p class="about-us">Mission</p>
+        <hr>
+        <p class="about-us-p">
+          We are committed to providing bespoke, reliable, and accessible travel services for worry-free vacations to any destination.
+          <br>
+          <br>
+          MiCa & Co. Travel is your dedicated partner in delivering tailored and trustworthy travel services, ensuring worry-free vacations to any destination. With a passionate team at the helm, we meticulously customize every element of your journey to align with your desires. From seamless logistics to personalized experiences, we're here to make your dream vacation a reality. Experience the world with confidence, guided by MiCa & Co.'s commitment to excellence.
+        </p>
+       </div>
+      <div class="tab-pane tab-width fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0"><p class="about-us">Vision</p>
+        <hr>
+        <p class="about-us-p">
+          At MiCa & Co. Travel, our goal is to become a trusted travel and tours agency in Manila known for providing personalized and memorable experiences to both local and international tourists.
+        <br>
+        <br>
+        We are dedicated to delivering reliable and well-crafted journeys that reflect our commitment to quality. By focusing on creating authentic and meaningful travel experiences, we aim to build a reputation based on trust and customer satisfaction. Our team works diligently to ensure that every traveler enjoys a unique and enjoyable adventure, leaving with cherished memories of their time with us.
+        </p>
+        </div>
+    </div>
   </div>
 </div> -->
+<div class="container about-cont">
+  <h1 class="about-us-head mb-5" id="about">Elevate Your Travel Experience</h1>
+  <ul class="nav nav-tabs" id="myTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About Us</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mission</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Vision</a>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <p class="about-us mt-4">About Us</p>
+    <p class="about-us-p">
+      We established MiCa & Co. TRAVEL AND TOURS to share our passion for adventure, exploration, and fun! Each of our founders renewed their purpose in life while traveling with the people they love. We want to share this magic with local and international tourists through the services only MiCa & Co. TRAVEL AND TOURS can provide.
+    </p>
+  </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <p class="about-us mt-4">Mission</p>
+      <p class="about-us-p">
+        We are committed to providing bespoke, reliable, and accessible travel services for worry-free vacations to any destination.
+        <br>
+        <br>
+        MiCa & Co. Travel is your dedicated partner in delivering tailored and trustworthy travel services, ensuring worry-free vacations to any destination. With a passionate team at the helm, we meticulously customize every element of your journey to align with your desires. From seamless logistics to personalized experiences, we're here to make your dream vacation a reality. Experience the world with confidence, guided by MiCa & Co.'s commitment to excellence.
+      </p>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <p class="about-us mt-4">Vision</p>
+      <p class="about-us-p">
+        At MiCa & Co. Travel, our goal is to become a trusted travel and tours agency in Manila known for providing personalized and memorable experiences to both local and international tourists.
+      <br>
+      <br>
+      We are dedicated to delivering reliable and well-crafted journeys that reflect our commitment to quality. By focusing on creating authentic and meaningful travel experiences, we aim to build a reputation based on trust and customer satisfaction. Our team works diligently to ensure that every traveler enjoys a unique and enjoyable adventure, leaving with cherished memories of their time with us.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- fixed-img
+<div class="fixed-img-cont">
+<h1>hello</h1>
+<img class="fixed-img" src="./home-images/hero-bg-img (scroll).jpg" alt="">
+</div> -->
+
+<!-- script for navscroll -->
+<script>
+const NavScroll = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 96) {
+    NavScroll.classList.add("navbar-scroll");
+  } else if (window.scrollY < 96) {
+    NavScroll.classList.remove("navbar-scroll");
+  }
+});
+</script>
 </body>
 </html>
