@@ -1,3 +1,4 @@
+/* hero */
 .c-item {
   height: 100vh;
 }
@@ -24,30 +25,4 @@
 body {
   height: 5000px;
   overflow-x: hidden;
-}
-/*  */
-.about-cont {
-  margin-top: 10rem;
-  font-family: 'Ubuntu', sans-serif;
-}
-.about-us-head {
-  text-align: center;
-}
-.about-full-content {
-  margin-top: 5rem;
-  margin-left: 11rem;
-}
-.about-us {
-  font-size: 35px;
-  color: #ffbf69;
-  font-weight: bold;
-}
-.about-us-p {
-  font-size: 18px;
-}
-.abt-btn {
-  font-size: 15px;
-}
-.tab-width {
-  width: 40rem;
 }

@@ -1,0 +1,51 @@
+/* about */
+.about-cont {
+  margin-top: 10rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.about-us-head {
+  text-align: center;
+  position: relative;
+  padding-bottom: 25px;
+}
+.about-us-head::after {
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: black;
+}
+.about-full-content {
+  margin-top: 5rem;
+  margin-left: 11rem;
+}
+.about-us {
+  font-size: 35px;
+  color: #ffbf69;
+  font-weight: bold;
+}
+.about-us-p {
+  font-size: 18px;
+}
+.fa {
+  margin: 1rem;
+}
+.about-services li {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 5px;
+  width: 600px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.p1 {
+  margin-bottom: 55px;
+}
+.abt-btn {
+  font-size: 15px;
+}
+.tab-width {
+  width: 40rem;
+}

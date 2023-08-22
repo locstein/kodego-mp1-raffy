@@ -1,0 +1,70 @@
+/* testimonials */
+section {
+  display: grid;
+  place-items: center;
+  max-height: fit-content;
+  background-color: #dedbd26c;
+  font-family: 'Ubuntu', sans-serif; 
+}
+.section-header {
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 50px;
+}
+.section-header::after {
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: black;
+}
+.section-header span{
+  display: block;
+  font-size: 15px
+}
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+.single-item {
+  padding: 15px;
+  margin: 50px 15px;
+}
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+.img-area img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid beige;
+}
+.content {
+  font-size: 18px;
+}
+.content p{
+  text-align: justify;
+}
+.content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: s;
+}
+.socials i {
+  margin-right: 25px;
+}
+.carousel2-next,
+.carousel2-prev {
+  background-color: #ffbf69;
+  border-radius: 50%;
+}
+
