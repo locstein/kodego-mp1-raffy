@@ -33,6 +33,7 @@ section {
 .single-item {
   padding: 15px;
   margin: 50px 15px;
+  box-shadow: 10px 10px #00000062;
 }
 .profile {
   margin-bottom: 30px;
