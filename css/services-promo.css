@@ -19,6 +19,3 @@
   left: calc(50% - 100px);
   background: black;
 }
-.promo-shadow {
-  box-shadow: 10px 10px #00000000;
-}

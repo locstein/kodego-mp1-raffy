@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="./css/hero-style.css">
 <link rel="stylesheet" href="./css/about-style.css">
 <link rel="stylesheet" href="./css/testimonial-style.css">
+<link rel="stylesheet" href="./css/contact-style.css">
 <link rel="stylesheet" href="./css/services-promo.css">
 
 <title>Mica&Co | Hero</title>
@@ -263,15 +264,14 @@
 
 <!-- services-promo -->
 <section id="promo-id">
-<div class="container-xxl py-5 promo-destination">
+<div class="container py-5 promo-destination">
   <h1 class="promo-section-header">
     Promo | Services
   </h1>
-  <div class="row g-3">
-    <div class="col-lg-12 col-md-6">
+    <div class="col-lg-7 col-md-6">
       <div class="row g-3">
 
-        <div class="col-lg-6 col-md-12 promo-shadow">
+        <div class="col-lg-12 col-md-12">
           <a href="" class="d-block position-relative overflow-hidden">
             <img class="img-fluid rounded" src="./home-images/destination1-promo-img.jpg" alt="">
             <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
@@ -279,7 +279,7 @@
           </a>
         </div> 
 
-        <div class="col-lg-6 col-md-12 promo-shadow">
+        <div class="col-lg-6 col-md-12">
           <a href="" class="d-block position-relative overflow-hidden">
             <img class="img-fluid rounded" src="./home-images/destination5-promo-img.jpg" alt="">
             <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
@@ -287,7 +287,7 @@
           </a>
         </div>
 
-        <div class="col-lg-6 col-md-12 promo-shadow">
+        <div class="col-lg-6 col-md-12">
           <a href="" class="d-block position-relative overflow-hidden">
             <img class="img-fluid rounded" src="./home-images/destination2-promo-img.jpg" alt="">
             <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
@@ -295,18 +295,73 @@
           </a>
         </div>
 
-        <div class="col-lg-6 col-md-12 promo-shadow">
-          <a href="" class="d-block position-relative overflow-hidden">
-            <img class="img-fluid rounded" src="./home-images/destination4-promo-img.jpg" alt="">
-            <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Maldives</div>
+        <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+          <a href="" class="d-block position-relative h-100 overflow-hidden">
+            <img class="img-fluid position-absolute w-100 h-100" style="object-fit: cover;" src="./home-images/destination3-promo-img.jpg" alt="">
           </a>
         </div>
-
+        
       </div>
     </div>
+    
 </section>
 
+<!-- contact -->
+<section id="contact-id">
+  <div class="container contact-cont">
+    <h1 class="contact-header">
+      Contact
+    </h1>
+    <div class="row contact-shadow">
+      <div class="col-md-7 contact-column-1">
+        <h4>Get in touch</h4>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Enter your email...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Enter your number...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success">Send</button>
+      </div>
+      <div class="col-md-5 contact-column-2 bg-success text-light">
+        <h4>Contact Us</h4>
+        <hr>
+        <div class="mt-5">
+          <div class="d-flex">
+            <i class="bi bi-geo-alt"></i>
+            <p class="contact-p">Address: 18th Floor, W Fifth Avenue Building, 5th Avenue and 32nd Street, Taguig</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-telephone"></i>
+            <p class="contact-p"></p>Phone: 09123456789</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-envelope-at"></i>
+            <p class="contact-p">Email: info@micatravelandtours.com</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-globe-asia-australia"></i>
+            <p class="contact-p">Website: www.micatravelandtours.com</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
 const NavScroll = document.querySelector(".navbar");
