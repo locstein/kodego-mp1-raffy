@@ -26,6 +26,6 @@ a {
 @media (max-width: 768px) {
   .sidebar {
     background-color: rgba(68, 68, 39, 0.199);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
   }
 }
