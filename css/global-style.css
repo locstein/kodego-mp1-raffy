@@ -3,6 +3,9 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
+body {
+  scroll-behavior: smooth;
+}
 .home-img-logo {
   height: 6rem;
 }

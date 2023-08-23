@@ -23,7 +23,9 @@
 <div class="container">
 
   <!-- navbar-logo -->
-  <a class="navbar-brand" href="#"><img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt=""></a>
+  <a class="navbar-brand" href="#">
+    <img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt="">
+  </a>
   <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,19 +39,19 @@
     <div class="offcanvas-body py-2">
       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li class="nav-item text-center py-2">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link" aria-current="page" href="">Home</a>
         </li>
         <li class="nav-item  text-center py-2">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item  text-center py-2">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" href="#testimonials-id">Testimonials</a>
         </li>
         <li class="nav-item  text-center py-2">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#promo-id">Services</a>
         </li>
         <li class="nav-item  text-center py-2">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact-id">Contact</a>
         </li>
       </ul>
     </div>
@@ -105,7 +107,7 @@
 <h1 class="about-us-head mb-5" id="about">Elevate Your Travel Experience.</h1>
 <ul class="nav nav-tabs" id="myTabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About Us</a>
+    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="" role="tab" aria-controls="home" aria-selected="true">About Us</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mission</a>
@@ -362,6 +364,29 @@
     </div>
   </div>
 </section>
+
+<!-- footer -->
+  <footer class="text-center text-lg-start bg-dark">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
+        <i class="bi bi-facebook"></i>
+      </button>
+      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
+        <i class="bi bi-youtube"></i>
+      </button>
+      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
+        <i class="bi bi-instagram"></i>
+      </button>
+      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
+        <i class="bi bi-twitter"></i>
+      </button>
+    </div>
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+  </footer>
+</div>
+
+
 
 <script>
 const NavScroll = document.querySelector(".navbar");
