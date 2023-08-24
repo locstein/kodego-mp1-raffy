@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="./css/global-style.css">
+  <link rel="stylesheet" href="./css/services-page.css">
+  <link rel="stylesheet" href="./css/contact-style.css">
+  <title>Mica&Co | Services</title>
+</head>
+<body>
+  <!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <div class="container">
+  
+    <!-- navbar-logo -->
+    <a class="navbar-brand" href="#">
+      <img class="home-img-logo" src="./home-images/micatours-logo-white.png" alt="">
+    </a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- sidebar -->
+    <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="sidebar-logo" src="./home-images/micatours-logo-white.png" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body py-2">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item text-center py-2">
+            <a class="nav-link" aria-current="page" href="hero.html">Home</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="hero.html">About</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="hero.html">Testimonials</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item  text-center py-2">
+            <a class="nav-link" href="hero.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <!-- vid header -->
+  <div class="video-container">
+    <video autoplay loop muted>
+        <source src="./home-images/services-vid.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Services</h1>
+    </div>
+  </div>
+
+<!-- services-form -->
+<section id="services-id">
+  <div class="container">
+  <h2 class="services-header">
+    Have a plan in mind? Book Now!
+  </h2>
+  <div class="form-booking-box bg-warning">
+    <div class="radio-btn">
+      <input type="radio" class="btn" name="check" checked="checked"><span>Roundtrip</span>
+      <input type="radio" class="btn" name="check"><span>One-Way</span>
+      <input type="radio" class="btn" name="check"><span>Multi-City</span>
+    </div>
+
+    <div class="booking-form">
+      <label for="">Flying From</label>
+      <input type="text" class="form-control" placeholder="City or Airport">
+      <label for="">Flying To</label>
+      <input type="text" class="form-control" placeholder="City or Airport">
+      <div class="input-grp">
+        <label for="">Departing</label>
+      <input type="date" class="form-control select-date">
+      </div>
+      <div class="input-grp">
+        <label for="">Returning</label>
+      <input type="date" class="form-control select-date">
+      </div>
+      <div class="input-grp">
+        <button type="button" class="btn btn-success flight">Book</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- more-services -->
+  <h2 class="services-header my-5">
+    More from us
+  </h2>
+  <div class="row g-3">
+    <div class="col-lg-6 col-md-12 my-3">
+      <div class="card text-bg-dark">
+        <img src="./home-images/more-services-img.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="border border-success bg-success rounded">Transport</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <div class="card text-bg-dark">
+        <img src="./home-images/more-services-img2 (resize).jpg" class="card-img card-img-size" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="border border-success bg-success rounded">Hotel</h5>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-6 col-md-12">
+        <div class="card text-bg-dark">
+          <img src="./home-images/more-services-img3.jpg" class="card-img card-img-size" alt="...">
+          <div class="card-img-overlay">
+              <h5 class="border border-success bg-success rounded">Tour</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 service-margin">
+        <div class="card text-bg-dark">
+          <img src="./home-images/more-services-img4.jpg" class="card-img card-img-size" alt="...">
+          <div class="card-img-overlay">
+              <h5 class="border border-success bg-success rounded">Airplane Ticket</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+<!-- contact -->
+<section id="contact-id">
+  <div class="container contact-cont">
+    <h1 class="contact-header">
+      Contact
+    </h1>
+    <div class="row contact-shadow">
+      <div class="col-md-7 contact-column-1">
+        <h4>Get in touch</h4>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Enter your email...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Enter your number...">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success">Send</button>
+      </div>
+      <div class="col-md-5 contact-column-2 bg-success text-light">
+        <h4>Contact Us</h4>
+        <hr>
+        <div class="mt-5">
+          <div class="d-flex">
+            <i class="bi bi-geo-alt"></i>
+            <p class="contact-p">Address: 18th Floor, W Fifth Avenue Building, 5th Avenue and 32nd Street, Taguig</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-telephone"></i>
+            <p class="contact-p"></p>Phone: 09123456789</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-envelope-at"></i>
+            <p class="contact-p">Email: info@micatravelandtours.com</p>
+          </div>
+          <hr>
+          <div class="d-flex">
+            <i class="bi bi-globe-asia-australia"></i>
+            <p class="contact-p">Website: www.micatravelandtours.com</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 font-weight-bold text-warning">MiCa&Co. TRAVEL AND TOURS</h5>
+        <p>Sharing our passion for adventure and exploration, bringing the magic to travelers worldwide.</p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100091674856321"><i class="bi bi-facebook mx-3"></i></a>
+          <a href="https://www.instagram.com/micacompanytravelandtours/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><i class="bi bi-instagram"></i></a>
+        </p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="font-weight-bold mb-4 text-warning">Links</h5>
+        <p>
+          <a href="#" class="text-white">Link 1</a>
+        </p>
+        <p>
+          <a href="#" class="text-white">Link 2</a>
+        </p>
+        <p>
+          <a href="#" class="text-white">Link 3</a>
+        <p>
+          <a href="#" class="text-white">Link 4</a>
+        </p>     
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 font-weight-bold text-warning">Contact</h5>
+        <p>
+          <i class="bi bi-geo-alt mx-3"></i>18th Floor, W Fifth Avenue Building, 5th Avenue and 32nd Street, Taguig</a>
+        </p> 
+        <p>
+          <i class="bi bi-telephone mx-3"></i>09123456789</a>
+        </p> 
+        <p>
+          <i class="bi bi-envelope mx-2"></i>info@micatravelandtours.com</a>
+        </p> 
+      </div>
+    </div>
+    <div class="col-lg-13 text-white p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © Copyright 2023 All Rights Reserved By Mica & Co. Travel and Tours
+  </div>
+</footer>
+
+
+<!-- scrollbar -->
+<script>
+  const NavScroll = document.querySelector(".navbar");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 96) {
+      NavScroll.classList.add("navbar-scroll");
+    } else if (window.scrollY < 96) {
+      NavScroll.classList.remove("navbar-scroll");
+    }
+  });
+  </script>
+</body>
+</html>

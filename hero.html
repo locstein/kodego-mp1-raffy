@@ -7,6 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- aos -->
 <!-- style -->
 <link rel="stylesheet" href="./css/global-style.css">
 <link rel="stylesheet" href="./css/hero-style.css">
@@ -14,10 +15,41 @@
 <link rel="stylesheet" href="./css/testimonial-style.css">
 <link rel="stylesheet" href="./css/contact-style.css">
 <link rel="stylesheet" href="./css/services-promo.css">
-
-<title>Mica&Co | Hero</title>
+<title>Mica&Co | Main</title>
 </head>
 <body>
+  <!-- modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel">Book a Destination</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="destinationName" class="form-label">Destination Name</label>
+                        <input type="text" class="form-control" id="destinationName" placeholder="Enter destination name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="arrivalDate" class="form-label">Arrival Date</label>
+                        <input type="date" class="form-control" id="arrivalDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="departureDate" class="form-label">Departure Date</label>
+                        <input type="date" class="form-control" id="departureDate">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
 <div class="container">
@@ -72,7 +104,7 @@
   <div class="carousel-caption top-0">
     <p class="mt-5 fs-3 text-uppercase">The journey of a lifetime starts with one step.</p>
     <h1 class="display-1 text-capitalize">Japan</h1>
-    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
+    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
   </div>
 </div>
 <div class="carousel-item c-item">
@@ -80,7 +112,7 @@
   <div class="carousel-caption top-0">
     <p class="mt-5 fs-3 text-uppercase">It's not a vacation, it's an adventure!</p>
     <h1 class="display-1 text-capitalize">Machu Picchu</h1>
-    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
+    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
   </div>
 </div>
 <div class="carousel-item c-item">
@@ -88,7 +120,7 @@
   <div class="carousel-caption top-0">
     <p class="mt-5 fs-3 text-uppercase">Get away from the ordinary</p>
     <h1 class="display-1 text-capitalize">Chichén Itzá</h1>
-    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero">Book Now</button>
+    <button type="button" class="btn btn-success btn-md px-4 py-2 fs-5 mt-3 btn-hero" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
   </div>
 </div>
 </div>
@@ -137,9 +169,9 @@
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
     <p class="about-us mt-4 text-success">Mission</p>
     <p class="about-us-p">
-      We are committed to providing bespoke, reliable, and accessible travel services for worry-free vacations to any destination.
+      We are committed to providing bespoke, reliable, and accessible travel services for worry-free vacations to any destination.</p>
       <br>
-      <br>
+      <p class="p1">
       MiCa & Co. Travel is your dedicated partner in delivering tailored and trustworthy travel services, ensuring worry-free vacations to any destination. With a passionate team at the helm, we meticulously customize every element of your journey to align with your desires. From seamless logistics to personalized experiences, we're here to make your dream vacation a reality. Experience the world with confidence, guided by MiCa & Co.'s commitment to excellence.
     </p>
   </div>
@@ -147,8 +179,9 @@
     <p class="about-us mt-4 text-success">Vision</p>
     <p class="about-us-p">
       At MiCa & Co. Travel, our goal is to become a trusted travel and tours agency in Manila known for providing personalized and memorable experiences to both local and international tourists.
+      </p>
     <br>
-    <br>
+    <p class="p1">
     We are dedicated to delivering reliable and well-crafted journeys that reflect our commitment to quality. By focusing on creating authentic and meaningful travel experiences, we aim to build a reputation based on trust and customer satisfaction. Our team works diligently to ensure that every traveler enjoys a unique and enjoyable adventure, leaving with cherished memories of their time with us.
     </p>
   </div>
@@ -272,41 +305,60 @@
   <h1 class="promo-section-header">
     Promo | Services
   </h1>
-    <div class="col-lg-7 col-md-6">
-      <div class="row g-3">
 
-        <div class="col-lg-12 col-md-12">
-          <a href="" class="d-block position-relative overflow-hidden">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="pb-3"> 
+          <div class="d-block position-relative overflow-hidden">
+          <div class="destination-image-cont">
             <img class="img-fluid rounded" src="./home-images/destination1-promo-img.jpg" alt="">
-            <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Boracay</div>
-          </a>
-        </div> 
-
-        <div class="col-lg-6 col-md-12">
-          <a href="" class="d-block position-relative overflow-hidden">
-            <img class="img-fluid rounded" src="./home-images/destination5-promo-img.jpg" alt="">
-            <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Dubai</div>
-          </a>
+          </div>
+          <div class="overlay-text-img">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+          <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+          <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Boracay</div>
+        </div>
         </div>
 
-        <div class="col-lg-6 col-md-12">
-          <a href="" class="d-block position-relative overflow-hidden">
-            <img class="img-fluid rounded" src="./home-images/destination2-promo-img.jpg" alt="">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-block position-relative overflow-hidden">
+            <img class="img-fluid rounded" src="./home-images/destination6-promo-img.jpg" alt="">
+            <div class="overlay-text-img">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
             <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Singapore</div>
-          </a>
-        </div>
-
-        <div class="col-lg-5 col-md-6" style="min-height: 350px;">
-          <a href="" class="d-block position-relative h-100 overflow-hidden">
-            <img class="img-fluid position-absolute w-100 h-100" style="object-fit: cover;" src="./home-images/destination3-promo-img.jpg" alt="">
-          </a>
+            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
+          </div>
         </div>
         
+          <div class="col-md-6">
+            <div class="d-block position-relative overflow-hidden">
+            <img class="img-fluid rounded" src="./home-images/destination2-promo-img.jpg" alt="">
+            <div class="overlay-text-img">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+            <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+            <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Singapore</div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="d-block position-relative h-100 overflow-hidden">
+        <img class="img-fluid position-absolute w-100 h-100" style="object-fit: cover;" src="./home-images/destination3-promo-img.jpg" alt="">
+        <div class="overlay-text-img">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+        </div>
+          <div class="rounded bg-warning text-success position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+          <div class="rounded bg-warning text-success position-absolute bottom-0 end-0 m-3 py-1 px-2">Dubai</div>
+        </div>
       </div>
     </div>
+    </div>
+    <a href="service.html"><button class="btn btn-success mb-5">Explore More</button></a>
     
 </section>
 
@@ -368,25 +420,49 @@
 </section>
 
 <!-- footer -->
-  <footer class="text-center text-lg-start bg-dark">
-    <div class="container d-flex justify-content-center py-5">
-      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
-        <i class="bi bi-facebook"></i>
-      </button>
-      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
-        <i class="bi bi-youtube"></i>
-      </button>
-      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
-        <i class="bi bi-instagram"></i>
-      </button>
-      <button type="button" class="btn btn-success btn-lg btn-floating mx-2">
-        <i class="bi bi-twitter"></i>
-      </button>
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 font-weight-bold text-warning">MiCa&Co. TRAVEL AND TOURS</h5>
+        <p>Sharing our passion for adventure and exploration, bringing the magic to travelers worldwide.</p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100091674856321"><i class="bi bi-facebook mx-3"></i></a>
+          <a href="https://www.instagram.com/micacompanytravelandtours/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><i class="bi bi-instagram"></i></a>
+        </p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="font-weight-bold mb-4 text-warning">Links</h5>
+        <p>
+          <a href="#" class="text-white">Link 1</a>
+        </p>
+        <p>
+          <a href="#" class="text-white">Link 2</a>
+        </p>
+        <p>
+          <a href="#" class="text-white">Link 3</a>
+        <p>
+          <a href="#" class="text-white">Link 4</a>
+        </p>     
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 font-weight-bold text-warning">Contact</h5>
+        <p>
+          <i class="bi bi-geo-alt mx-3"></i>18th Floor, W Fifth Avenue Building, 5th Avenue and 32nd Street, Taguig</a>
+        </p> 
+        <p>
+          <i class="bi bi-telephone mx-3"></i>09123456789</a>
+        </p> 
+        <p>
+          <i class="bi bi-envelope mx-2"></i>info@micatravelandtours.com</a>
+        </p> 
+      </div>
     </div>
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-  </footer>
-</div>
+    <div class="col-lg-13 text-white p-3 " style="background-color: rgba(0, 0, 0, 0.2);">
+      © Copyright 2023 All Rights Reserved By Mica & Co. Travel and Tours
+  </div>
+</footer>
 
 
 

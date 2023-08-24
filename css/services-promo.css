@@ -19,3 +19,29 @@
   left: calc(50% - 100px);
   background: black;
 }
+.destination-image-cont {
+  position: relative;
+}
+.overlay-text-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.overlay-text-img > * {
+  transform: translateY(25px);
+  transition: 0.25s;
+}
+.overlay-text-img:hover > * {
+  transform: translateY(0);
+} 
+.overlay-text-img:hover {
+  opacity: 1;
+}
